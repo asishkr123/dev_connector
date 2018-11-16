@@ -19,6 +19,9 @@ const UserSchema = new Schema({
         type : String,
         required : true
     },
+    avatar : {
+      type : String,
+    },
     date : {
         type : Date,
         default : Date.now
@@ -26,4 +29,4 @@ const UserSchema = new Schema({
 
 })
 
-module.exports = Mongoose.model('Users' , UserSchema);
+module.exports = mongoose.model('Users' , UserSchema);
